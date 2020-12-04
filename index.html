@@ -1,0 +1,1389 @@
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>Aryia Behroziuan</title>
+      
+          <!-- SEO Meta Tags-->
+          <meta name="description" content="Createx - Creative Agency Demo">
+          <meta name="keywords" content="bootstrap, business, creative agency, portfolio, services, ui kit, landing, html5, css3, javascript, gallery, slider, touch, creative">
+          <meta name="author" content="Createx Studio">
+      
+          
+          <!-- Viewport-->
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+          <!-- Favicon and Touch Icons-->
+          <link rel="apple-touch-icon" sizes="180x180" href="https://createx.vercel.app/assets/img/apple-touch-icon.png">
+          <link rel="icon" type="image/png" sizes="32x32" href="https://avatars2.githubusercontent.com/u/72256856?s=400&u=6541d71422cceb851dd3b22ecab01e3cc8c90057&v=4">
+          <link rel="icon" type="image/png" sizes="16x16" href="https://avatars2.githubusercontent.com/u/72256856?s=400&u=6541d71422cceb851dd3b22ecab01e3cc8c90057&v=4">
+          <link rel="manifest" href="https://createx.vercel.app/assets/img/site.webmanifest">
+          <link rel="mask-icon" color="#5bbad5" href="https://createx.vercel.app/assets/img/safari-pinned-tab.svg">
+          <meta name="msapplication-TileColor" content="#766df4">
+          <meta name="theme-color" content="#ffffff">
+      
+          <!-- Vendor Styles-->
+          <link rel="stylesheet" media="screen" href="https://createx.vercel.app/assets/vendor/lightgallery.js/dist/css/lightgallery.min.css">
+          <link rel="stylesheet" media="screen" href="https://createx.vercel.app/assets/vendor/tiny-slider/dist/tiny-slider.css">
+      
+          <!-- Main Theme Styles + Bootstrap-->
+          <link rel="stylesheet" media="screen" href="https://createx.vercel.app/assets/css/demo/creative-agency/theme.min.css">
+          
+          <!-- Page loading styles-->
+          <style>
+            .cs-page-loading {
+              position: fixed;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              -webkit-transition: all .4s .2s ease-in-out;
+              transition: all .4s .2s ease-in-out;
+              background-color: #fff;
+              opacity: 0;
+              visibility: hidden;
+              z-index: 9999;
+            }
+            .cs-page-loading.active {
+              opacity: 1;
+              visibility: visible;
+            }
+            .cs-page-loading-inner {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              width: 100%;
+              text-align: center;
+              -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+              -webkit-transition: opacity .2s ease-in-out;
+              transition: opacity .2s ease-in-out;
+              opacity: 0;
+            }
+            .cs-page-loading.active > .cs-page-loading-inner {
+              opacity: 1;
+            }
+            .cs-page-loading-inner > span {
+              display: block;
+              font-size: 1rem;
+              font-weight: normal;
+              color: #787a80;
+            }
+            .cs-page-spinner {
+              display: inline-block;
+              width: 2.75rem;
+              height: 2.75rem;
+              margin-bottom: .75rem;
+              vertical-align: text-bottom;
+              background-color: #cfcfd1; 
+              border-radius: 50%;
+              opacity: 0;
+              -webkit-animation: spinner .75s linear infinite;
+              animation: spinner .75s linear infinite;
+            }
+            @-webkit-keyframes spinner {
+              0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+              }
+              50% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+              }
+            }
+            @keyframes spinner {
+              0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+              }
+              50% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+              }
+            }
+          </style>
+      
+          <!-- Page loading scripts-->
+          <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WKV3GT5"></script><script>
+            (function () {
+              window.onload = function () {
+                var preloader = document.querySelector('.cs-page-loading');
+                preloader.classList.remove('active');
+                setTimeout(function () {
+                  preloader.remove();
+                }, 2000);
+              };
+            })();
+          </script>
+      
+          <!-- Demo switcher off-canvas toggle styles -->
+          <style>
+            .cs-demo-switcher {
+              position: fixed;
+              display: block;
+              top: 50%;
+              right: 1rem;
+              z-index: 100;
+            }
+            .cs-demo-switcher-inner {
+              width: 3rem;
+              height: 3rem;
+              border: 1px solid #e5e8ed;
+              border-radius: 50%;
+              background-color: #fff;
+              color: #1e212c;
+              font-size: 1.25rem;
+              line-height: 3rem;
+              text-align: center;
+              text-decoration: none;
+              box-shadow: 0px 10px 15px 0px rgba(30,33,44,0.10);
+            }
+          </style>
+      
+          <!-- Google Tag Manager -->
+          <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WKV3GT5');
+          </script>
+        <meta http-equiv="origin-trial" content="A+lrru9joWsVsv/P3X+dopx0K3Kqqa6TWuRhy8lfco2FWWUMUnhmKWF6G2lVMHBKPbvghnI7kjiVh2s5G6NhmQUAAACOeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGVhZHNlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjA4MzIyMTU3LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script src="https://www.googleadservices.com/pagead/conversion/717446051/?random=1607072412733&amp;cv=9&amp;fst=1607072412733&amp;num=1&amp;value=0&amp;label=F-BmCKDx2sUBEKO3jdYC&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=864&amp;u_w=1536&amp;u_ah=824&amp;u_aw=1536&amp;u_cd=24&amp;u_his=3&amp;u_tz=210&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wgb41&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fcreatex.vercel.app%2Fhtml%2Fcreative-agency%2Findex.html&amp;ref=https%3A%2F%2Fcreatex.vercel.app%2F&amp;tiba=Createx%20%7C%20Creative%20Agency%20-%20Home&amp;hn=www.googleadservices.com&amp;bttype=purchase&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><style></style><style></style><style></style><style></style><style type="text/css" id="jarallax-clip-0">#jarallax-container-0 {
+                  clip: rect(0 761.6000366210938px 735.6749877929688px 0);
+                  clip: rect(0, 761.6000366210938px, 735.6749877929688px, 0);
+                  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              }</style></head>
+
+<body class="" style="padding-right: 0px;">
+    
+     <!-- Google Tag Manager (noscript)-->
+     <noscript>
+       <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+     </noscript>
+ 
+     <!-- Page loading spinner-->
+     
+ 
+     <!-- Main content-->
+     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+     <main class="cs-page-wrapper position-relative">
+ 
+ 
+       <!-- Demo switcher off-canvas -->
+       <div id="demo-switcher" class="cs-offcanvas cs-offcanvas-right">
+         <div class="cs-offcanvas-cap d-block border-bottom">
+           <div class="d-flex justify-content-between align-items-center">
+             <h2 class="h5 mb-0">Choose Demo</h2>
+             <button class="close mr-n1" type="button" data-dismiss="offcanvas" aria-label="Close">
+               <span class="h3 font-weight-normal mb-0" aria-hidden="true">×</span>
+             </button>
+           </div>
+           <div class="d-flex pt-3">
+             <a href="../../index.html" class="btn btn-sm btn-outline-secondary btn-block my-0 mr-2">
+               <i class="cxi-home font-size-base mr-1"></i>
+              Main Page
+             </a>
+             <a href="../components/typography.html" class="btn btn-sm btn-outline-secondary btn-block my-0">
+               <i class="cxi-files font-size-base mr-1"></i>
+              Docs / UI Kit
+             </a>
+           </div>
+         </div>
+         <div class="cs-offcanvas-body pt-4 pb-3" data-simplebar="" data-simplebar-auto-hide="true">
+           <a href="../creative-agency/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="https://createx.vercel.app/img/demo-switcher/creative-agency.jpg" class="d-block rounded-top mb-2" alt="Creative Agency">
+             <h6 class="mb-0 pt-1 text-center">Creative Agency</h6>
+           </a>
+           <a href="../ecommerce/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="https://createx.vercel.app/assets/img/demo-switcher/ecommerce.jpg" class="d-block rounded-top mb-2" alt="E-Commerce">
+             <h6 class="mb-0 pt-1 text-center">E-Commerce</h6>
+           </a>
+           <a href="../construction/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="https://createx.vercel.app/assets/img/demo-switcher/construction.jpg" class="d-block rounded-top mb-2" alt="Construction Bureau">
+             <h6 class="mb-0 pt-1 text-center">Construction Bureau</h6>
+           </a>
+           <a href="../seo-agency/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="https://createx.vercel.app/assets/img/demo-switcher/seo-agency.jpg" class="d-block rounded-top mb-2" alt="SEO &amp; Marketing Agency">
+             <h6 class="mb-0 pt-1 text-center">SEO &amp; Marketing Agency</h6>
+           </a>
+           <a href="../online-courses/index.html" class="d-block cs-heading-highlight box-shadow-sm rounded-bottom pb-3 mb-4">
+             <img src="https://createx.vercel.app/assets/img/demo-switcher/online-courses.jpg" class="d-block rounded-top mb-2" alt="Online Courses">
+             <h6 class="mb-0 pt-1 text-center">Online Courses</h6>
+           </a>
+         </div>
+         <div class="cs-offcanvas-cap flex-column border-top">
+           <a href="https://themes.getbootstrap.com/product/createx-multipurpose-template-ui-kit/" class="btn btn-primary btn-block" target="_blank" rel="noopener">
+             <i class="cxi-cart mt-n1 mr-2"></i>
+             Buy Createx
+           </a>
+         </div>
+       </div>
+ 
+ 
+       <!-- Demo switcher off-canvas toggle -->
+
+ 
+       <!-- Navbar -->
+       <!-- Remove .navbar-sticky class to detach .navbar from page scroll -->
+       <header class="cs-header navbar navbar-expand-md navbar-sticky navbar-floating navbar-dark">
+         <div class="container px-0 px-xl-3">
+           <a class="navbar-brand order-md-1 mr-md-5 mr-0 pr-lg-2" href="index.html">
+             <h1 class="navbar-brand-static" style="font-size: 15px; color: white; margin-top: 20px;">Aryia Behroziuan</h1>
+             <h1 class="navbar-brand-floating" style="font-size: 15px; color: black;  margin-top: 20px;">Aryia Behroziuan</h1>
+             <!--<img class="navbar-brand-static" src="https://createx.vercel.app/assets/img/creative-agency/logo-light.svg" alt="Createx Logo" width="130">
+             <img class="navbar-brand-floating" src="https://createx.vercel.app/assets/img/creative-agency/logo-dark.svg" alt="Createx Logo" width="130">-->
+           </a>
+           <div class="d-flex align-items-center order-md-3">
+             <a class="btn btn-primary btn-pill d-sm-inline-block d-none ml-3" href="https://aryia-behroziuan.github.io/web/Pages/Service.html">Service</a>
+             <button class="navbar-toggler ml-1 mr-n3 collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-expanded="false">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+           </div>
+           <nav class="navbar-collapse order-md-2 collapse" id="navbarCollapse1" style="">
+             <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                 <a class="nav-link active" href="index.html">Home</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Portfolio</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="portfolio.html">Portfolio Grid</a></li>
+                   <li><a class="dropdown-item" href="portfolio-single-v1.html">Single Project v.1</a></li>
+                   <li><a class="dropdown-item" href="portfolio-single-v2.html">Single Project v.2</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="about.html">About us</a>
+               </li>
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Blog</a>
+                 <ul class="dropdown-menu">
+                   <li><a class="dropdown-item" href="blog.html">Blog List</a></li>
+                   <li><a class="dropdown-item" href="blog-single.html">Single Post</a></li>
+                 </ul>
+               </li>
+               <li class="nav-item d-sm-none d-block">
+                 <a class="nav-link" href="contacts.html">Contact us</a>
+               </li>
+             </ul>
+           </nav>
+         </div>
+       </header>
+ 
+ 
+       <!-- Hero-->
+       <section class="jarallax d-flex align-items-stretch min-vh-100 bg-dark overflow-hidden pt-5" data-jarallax="" data-speed="0.5">
+         
+         <div class="container d-flex flex-column justify-content-around pt-5 pt-sm-4 pb-5">
+           <div class="row mt-md-5 pt-sm-5">
+             <div class="col-lg-4 col-md-5 order-md-1 order-2 text-md-left text-center">
+               <div class="mt-lg-5 mb-4">
+                 <a href="https://www.youtube.com/channel/UCBRi1oF9Gf-h1rFJNagvFOg" class="cs-video-btn mr-3" data-gallery-video="" data-sub-html="<h6 class='font-size-sm text-light'>Agency Showreel</h6>" lg-uid="lg0"></a>
+                 <span class="font-size-sm font-weight-bold text-light">Play Showreel</span>
+               </div>
+               <h1 class="mb-lg-5 mb-4 pb-2 display-1 text-light">Hey, we’re Programmer<span class="text-primary">s</span></h1>
+               <a href="https://aryia-behroziuan.github.io/web/Content.html" class="mb-lg-0 mb-5 btn btn-lg btn-primary btn-pill" data-scroll="">View showcase</a>
+             </div>
+             <div class="col-lg-8 col-md-7 order-md-2 order-1">
+               <div class="row justify-content-center">
+                 <div class="col-sm-8 col-md-12">
+                   <div class="cs-parallax mb-md-0 mb-4" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                     <div class="cs-parallax-layer" data-depth="-0.09" style="z-index: 3; transform: translate3d(-1.2px, 2.9px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+                       <img src="https://createx.vercel.app/assets/img/creative-agency/home/hero-image/01.png" alt="Layer">
+                     </div>
+                     <div class="cs-parallax-layer" data-depth="-0.35" style="z-index: 4; transform: translate3d(-4.5px, 11.4px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                       <img src="https://createx.vercel.app/assets/img/creative-agency/home/hero-image/02.png" alt="Layer">
+                     </div>
+                     <div class="cs-parallax-layer" data-depth="-0.25" style="z-index: 2; transform: translate3d(-3.2px, 8.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                       <img src="https://createx.vercel.app/assets/img/creative-agency/home/hero-image/03.png" alt="Layer">
+                     </div>
+                     <div class="cs-parallax-layer" data-depth="-0.15" style="z-index: 1; transform: translate3d(-1.9px, 4.9px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                       <img src="https://createx.vercel.app/assets/img/creative-agency/home/hero-image/04.png" alt="Layer">
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="row d-md-flex d-none align-items-center mt-lg-n5">
+             <div class="col-4">
+               <ul class="pl-4 list-unstyled border-left border-primary font-weight-bold text-muted text-uppercase lead">
+                 <li>Welcome</li>
+                 <li>You can watch&amp; the news here</li>
+                 <li>Get the</li>
+                 <li>licenses here</li>
+               </ul>
+             </div>
+             <div class="col-4">
+               <a href="#mission" data-scroll="" class="d-flex align-items-center justify-content-center font-size-sm font-weight-bold text-light text-decoration-none">
+                 <i class="cxi-arrow-down h4 mr-2 mb-0 text-light"></i>
+                 Scroll down
+               </a>
+             </div>
+             <div class="col-4">
+               <div class="text-right">
+                 <span class="ml-auto font-weight-bold text-light">
+                   12+ <br>
+                   awards
+                 </span>
+               </div>
+             </div>
+           </div>
+         </div>
+       <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div class="jarallax-img" style="background-image: url(&quot;https://createx.vercel.app/assets/img/creative-agency/home/hero-bg.jpg&quot;); object-fit: cover; object-position: 50% 50%; max-width: none; position: fixed; top: 0px; left: 0px; width: 761.6px; height: 709.337px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -13.1687px; transform: translate3d(0px, 13.1687px, 0px);" data-jarallax-original-styles="background-image: url(https://createx.vercel.app/assets/img/creative-agency/home/hero-bg.jpg);"></div></div></section>
+ 
+ 
+       <!-- Mission -->
+       <section id="mission" class="container py-lg-6 py-5 my-3 mt-lg-1 mb-sm-5">
+         <h3 class="h6 mb-3 pb-1 text-uppercase">What we do</h3>
+         <div class="row">
+           <div class="col-lg-7 col-md-6">
+             <p class="h3 mb-md-0 mb-3 pb-md-0 pb-1 line-height-base">We&nbsp;are a&nbsp;full-service creative studio. We&nbsp;generate innovative ideas, purposeful content and unique visual languages to&nbsp;empower meaningful interactions with audiences, brands, products and purposes.</p>
+           </div>
+           <div class="col-lg-5 col-md-6 overflow-hidden">
+             <div class="d-flex justify-content-md-end flex-sm-nowrap flex-wrap mx-n4">
+               <div class="mb-sm-0 mb-4 px-4">
+                 <span class="d-inline-block pb-1 font-size-sm text-dark text-nowrap">Highlighted in</span>
+                 <img class="d-block mt-md-3 mt-2" src="https://createx.vercel.app/assets/img/creative-agency/logo/forbes.svg" alt="Brand logo">
+               </div>
+               <div class="mb-sm-0 mb-4 px-4">
+                 <span class="d-inline-block pb-1 font-size-sm text-dark text-nowrap">Top rated agency</span>
+                 <img class="d-block mt-md-3 mt-2" src="https://createx.vercel.app/assets/img/creative-agency/logo/upwork.svg" alt="Brand logo">
+               </div>
+               <div class="mb-sm-0 mb-4 px-4">
+                 <span class="d-inline-block pb-1 font-size-sm text-dark text-nowrap">5 stars only</span>
+                 <img class="d-block mt-md-3 mt-2" src="https://createx.vercel.app/assets/img/creative-agency/logo/clutch.svg" alt="Brand logo">
+               </div>
+             </div>
+           </div>
+         </div>  
+       </section>
+ 
+ 
+       <!-- Approach -->
+       <section class="pt-lg-3 pb-4">
+         <div class="container">
+           <h3 class="h6 mb-2 text-uppercase">Our approach</h3>
+           <h2 class="h1 mb-lg-5 mb-4">That’s how we do it</h2>
+         </div>
+ 
+         <!-- Carousel -->
+         <div class="container px-0">
+           <div class="cs-carousel cs-nav-outside mt-n4 ml-lg-n5">
+             <div class="tns-outer" id="tns1-ow"><div class="tns-nav" aria-label="Carousel Pagination" style=""><button type="button" data-nav="0" aria-controls="tns1" style="" aria-label="Carousel Page 1 (Current Slide)" class="tns-nav-active"></button><button type="button" data-nav="1" tabindex="-1" aria-controls="tns1" style="" aria-label="Carousel Page 2"></button><button type="button" data-nav="2" tabindex="-1" aria-controls="tns1" style="display: none;" aria-label="Carousel Page 3"></button><button type="button" data-nav="3" tabindex="-1" aria-controls="tns1" style="display: none;" aria-label="Carousel Page 4"></button></div><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">1 to 3</span>  of 4</div><div id="tns1-mw" class="tns-ovh"><div class="tns-inner" id="tns1-iw"><div class="cs-carousel-inner pt-4 pl-lg-5  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" data-carousel-options="{
+               &quot;loop&quot;: false,
+               &quot;controls&quot;: false,
+               &quot;responsive&quot;: {
+                 &quot;0&quot;: {
+                   &quot;items&quot;: 1
+                 },
+                 &quot;576&quot;: {
+                   &quot;items&quot;: 2
+                 },
+                 &quot;768&quot;: {
+                   &quot;items&quot;: 3
+                 },
+                 &quot;992&quot;: {
+                   &quot;items&quot;: 4
+                 }
+               }
+             }" id="tns1" style="transition-duration: 0s; transform: translate3d(0%, 0px, 0px);">
+ 
+               <!-- Horizontal step item -->
+               <div class="cs-step pt-2 px-3 tns-item tns-slide-active" id="tns1-item0">
+                 <div class="cs-step-head mb-3">
+                   <span class="cs-step-indicator">01</span>
+                   <span class="cs-step-line"></span>
+                 </div>
+                 <div class="cs-step-body">
+                   <h3 class="h5 mb-2">Research &amp; Analysis</h3>
+                   <p class="mb-0 text-muted">Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+                 </div>
+               </div>
+ 
+               <!-- Horizontal step item -->
+               <div class="cs-step pt-2 px-3 tns-item tns-slide-active" id="tns1-item1">
+                 <div class="cs-step-head mb-3">
+                   <span class="cs-step-indicator">02</span>
+                   <span class="cs-step-line"></span>
+                 </div>
+                 <div class="cs-step-body">
+                   <h3 class="h5 mb-2">Prototyping</h3>
+                   <p class="mb-0 text-muted">Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim ad tempor.</p>
+                 </div>
+               </div>
+ 
+               <!-- Horizontal step item -->
+               <div class="cs-step pt-2 px-3 tns-item tns-slide-active" id="tns1-item2">
+                 <div class="cs-step-head mb-3">
+                   <span class="cs-step-indicator">03</span>
+                   <span class="cs-step-line"></span>
+                 </div>
+                 <div class="cs-step-body">
+                   <h3 class="h5 mb-2">Pixel-perfect UI Design</h3>
+                   <p class="mb-0 text-muted">Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.</p>
+                 </div>
+               </div>
+ 
+               <!-- Horizontal step item -->
+               <div class="cs-step pt-2 px-3 tns-item" id="tns1-item3" aria-hidden="true" tabindex="-1">
+                 <div class="cs-step-head mb-3">
+                   <span class="cs-step-indicator">04</span>
+                 </div>
+                 <div class="cs-step-body">
+                   <h3 class="h5 mb-2">Development (Coding)</h3>
+                   <p class="mb-0 text-muted">Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniamad.</p>
+                 </div>
+               </div>
+             </div></div></div></div>
+           </div>
+         </div>
+       </section>
+ 
+
+
+
+
+
+
+
+
+       <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 text-center">
+  
+              <!-- Heading -->
+              <h1>
+                Fair, simple pricing for all.
+              </h1>
+  
+              <!-- Text -->
+              <p class="lead text-gray-700">
+                All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
+              </p>
+  
+              <!-- Form -->
+              <form class="d-flex align-items-center justify-content-center mb-7 mb-md-9">
+  
+                <!-- Label -->
+                <span class="text-muted">
+                  Annual
+                </span>
+  
+                <!-- Switch -->
+                <div class="custom-control custom-switch mx-3">
+                  <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price" data-target=".price">
+                  <label class="custom-control-label" for="billingSwitch"></label>
+                </div>
+  
+                <!-- Label -->
+                <span class="text-muted">
+                  Monthly
+                </span>
+  
+              </form>
+  
+            </div>
+          </div> <!-- / .row -->
+          <div class="row align-items-center no-gutters">
+            <div class="col-12 col-md-6">
+  
+              <!-- Card -->
+              <div class="card rounded-lg shadow-lg mb-6 mb-md-0 aos-init aos-animate" style="z-index: 1;" data-aos="fade-up">
+  
+                <!-- Body -->
+                <div class="card-body py-6 py-md-8">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-xl-9">
+  
+                      <!-- Badge -->
+                      <div class="text-center mb-5">
+                        <span class="badge badge-pill badge-primary-soft">
+                          <span class="h6 font-weight-bold text-uppercase">Standard</span>
+                        </span>
+                      </div>
+  
+                      <!-- Price -->
+                      <div class="d-flex justify-content-center">
+                        <span class="h2 mb-0 mt-2">$</span>
+                        <span class="price display-2 mb-0" data-annual="29" data-monthly="49">3</span>
+                        <span class="h2 align-self-end mb-1">/mo</span>
+                      </div>
+  
+                      <!-- Text -->
+                      <p class="text-center text-muted mb-6 mb-md-8">
+                        per seat
+                      </p>
+  
+                      <!-- Features -->
+                      <div class="d-flex">
+  
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                          <i class="fe fe-check"></i>
+                        </div>
+  
+                        <!-- Text -->
+                        <p>
+                          Rich, responsive landing pages
+                        </p>
+  
+                      </div>
+                      <div class="d-flex">
+  
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                          <i class="fe fe-check"></i>
+                        </div>
+  
+                        <!-- Text -->
+                        <p>
+                          100+ styled components
+                        </p>
+  
+                      </div>
+                      <div class="d-flex">
+  
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                          <i class="fe fe-check"></i>
+                        </div>
+  
+                        <!-- Text -->
+                        <p>
+                          Flexible, simple license
+                        </p>
+  
+                      </div>
+                      <div class="d-flex">
+  
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                          <i class="fe fe-check"></i>
+                        </div>
+  
+                        <!-- Text -->
+                        <p>
+                          Speedy build tooling
+                        </p>
+  
+                      </div>
+                      <div class="d-flex">
+  
+                        <!-- Check -->
+                        <div class="badge badge-rounded-circle badge-success-soft mt-1 mr-4">
+                          <i class="fe fe-check"></i>
+                        </div>
+  
+                        <!-- Text -->
+                        <p class="mb-0">
+                          6 months free support included
+                        </p>
+  
+                      </div>
+  
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+  
+                <!-- Button -->
+                <a href="#!" class="card-btn btn btn-block btn-lg btn-primary">
+                  Get it now
+                </a>
+  
+              </div>
+  
+            </div>
+            <div class="col-12 col-md-6 ml-md-n3">
+  
+              <!-- Card -->
+              <div class="card rounded-lg shadow-lg aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+  
+                <!-- Body -->
+                <div class="card-body py-6 py-md-8">
+                  <div class="row justify-content-center">
+                    <div class="col-12 col-xl-10">
+  
+                      <!-- Badge -->
+                      <p class="text-center mb-8 mb-md-11">
+                        <span class="badge badge-pill badge-primary-soft">
+                          <span class="h6 font-weight-bold text-uppercase">Enterprise</span>
+                        </span>
+                      </p>
+  
+                      <!-- Text -->
+                      <p class="lead text-center text-muted mb-0 mb-md-10">
+                        We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.
+                      </p>
+  
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+  
+                <!-- Button -->
+                <a href="#!" class="card-btn btn btn-block btn-lg btn-light bg-gray-300 text-gray-700">
+                  Contact us
+                </a>
+  
+              </div>
+  
+            </div>
+          </div> <!-- / .row -->
+        </div>
+
+
+
+
+
+
+
+ 
+       <!-- Services -->
+       <section class="container py-lg-6 mb-md-3 mb-lg-0 py-5">
+         <h3 class="h6 mb-2 text-uppercase">Capabilities</h3>
+         <h2 class="h1 mb-lg-4 mb-2 pb-3">Our services</h2>
+         <div class="row align-items-center">
+           <div class="col-md-5 order-md-1 order-2">
+ 
+             <!-- Accordion made of cards -->
+             <div class="accordion" id="accordionServices">
+ 
+               <!-- Card -->
+               <div class="card">
+                 <div class="card-header pt-0" id="servicesHeadingOne">
+                   <h3 class="accordion-heading">
+                     <a href="#servicesCollapseOne" role="button" data-toggle="collapse" data-binded-content="#identity" aria-expanded="true" aria-controls="servicesCollapseOne">
+                       <span class="accordion-indicator"></span>
+                       software&amp; engineering
+                     </a>
+                   </h3>
+                 </div>
+                 <div class="collapse show" id="servicesCollapseOne" aria-labelledby="servicesHeadingOne" data-parent="#accordionServices">
+                   <div class="card-body">
+                    Generate programs with software support and evolutionary updates Producing tools for our peers.
+                   </div>
+                 </div>
+               </div>
+ 
+               <!-- Card -->
+               <div class="card">
+                 <div class="card-header" id="servicesHeadingTwo">
+                   <h3 class="accordion-heading">
+                     <a href="#servicesCollapseTwo" role="button" data-toggle="collapse" data-binded-content="#web" aria-expanded="false" aria-controls="servicesHeadingTwo" class="collapsed">
+                       <span class="accordion-indicator"></span>
+                       Artificial Intelligence<br>
+                       &amp; Engineering
+                     </a>
+                   </h3>
+                 </div>
+                 <div class="collapse" id="servicesCollapseTwo" aria-labelledby="servicesHeadingTwo" data-parent="#accordionServices">
+                   <div class="card-body">
+                    Generate smart tools for programmers Programs with the ability to evolve with the world and their continuous development.
+                   </div>
+                 </div>
+               </div>
+ 
+               <!-- Card -->
+               <div class="card">
+                 <div class="card-header" id="servicesHeadingThree">
+                   <h3 class="accordion-heading">
+                     <a href="#servicesCollapseThree" role="button" data-toggle="collapse" data-binded-content="#photography" aria-expanded="false" aria-controls="servicesCollapseThree" class="collapsed">
+                       <span class="accordion-indicator"></span>
+                       Evolutionary&amp; software
+                     </a>
+                   </h3>
+                 </div>
+                 <div class="collapse" id="servicesCollapseThree" aria-labelledby="servicesHeadingThree" data-parent="#accordionServices">
+                   <div class="card-body">
+                    Create software with higher and more advanced capabilities than before with weekly or monthly updates.
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-lg-6 col-md-7 order-md-2 order-1 ml-auto">
+ 
+             <!-- Images binded to accordion -->
+             <div class="cs-binded-content mb-4">
+               <div id="identity" class="cs-binded-item active">
+                 <img class="d-block" src="https://createx.vercel.app/assets/img/creative-agency/home/services/01.svg" alt="Identity Design &amp; Illustration">
+               </div>
+               <div id="web" class="cs-binded-item">
+                 <img class="d-block" src="https://createx.vercel.app/assets/img/creative-agency/home/services/02.svg" alt="UX / UI Design">
+               </div>
+               <div id="photography" class="cs-binded-item">
+                 <img class="d-block" src="https://createx.vercel.app/assets/img/creative-agency/home/services/03.svg" alt="Photography &amp; Video Production">
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+ 
+ 
+       <!-- Portfolio: Featured projects -->
+       <section id="portfolio" class="bg-secondary py-lg-6 py-5">
+         <div class="container py-3 py-lg-0">
+           <h3 class="h6 mb-2 text-uppercase">Enjoy our latest projects</h3>
+           <div class="mb-lg-5 mb-4 d-flex justify-content-between">
+             <h2 class="h1 mb-0">Selected work</h2>
+             <div class="tns-custom-controls cs-controls-inverse mb-md-n4" id="tns-portfolio-controls" tabindex="0" aria-label="Carousel Navigation">
+               <button type="button" data-controls="prev" tabindex="-1" aria-controls="tns2">
+                 <i class="cxi-arrow-left"></i>
+               </button>
+               <button type="button" data-controls="next" tabindex="-1" aria-controls="tns2">
+                 <i class="cxi-arrow-right"></i>
+               </button>
+             </div>
+           </div>
+         </div>
+         <div class="container px-0">
+ 
+           <!-- Carousel  -->
+           <div class="cs-carousel mt-n2 mb-lg-5 mb-4">
+             <div class="tns-outer" id="tns2-ow"><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">7 to 9</span>  of 4</div><div id="tns2-mw" class="tns-ovh"><div class="tns-inner" id="tns2-iw"><div class="cs-carousel-inner  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" data-carousel-options="{
+               &quot;nav&quot;: false,
+               &quot;controlsContainer&quot;: &quot;#tns-portfolio-controls&quot;,
+               &quot;responsive&quot;: {
+                 &quot;0&quot;: {
+                   &quot;items&quot;: 1
+                 },
+                 &quot;576&quot;: {
+                   &quot;items&quot;: 2
+                 },
+                 &quot;768&quot;: {
+                   &quot;items&quot;: 3
+                 }
+               }
+             }" id="tns2" style="transition-duration: 0s; transform: translate3d(-37.5%, 0px, 0px);"><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="https://aryia-behroziuan.github.io/codedoxs/">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/03.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">CodeDoxs</h3>
+                     <span class="font-size-sm text-muted">Framwork</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="https://aryia-behroziuan.github.io/codeflask/">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/04.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">CodeFlask</h3>
+                     <span class="font-size-sm text-muted">CSS Framwork</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="https://aryia-behroziuan.github.io/ga/">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/01.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">GA Engine</h3>
+                     <span class="font-size-sm text-muted">Engine</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v2.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/02.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Minimalistic Mobile Interface</h3>
+                     <span class="font-size-sm text-muted">Mobile Apps</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v1.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/03.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Hardcover Book Concept</h3>
+                     <span class="font-size-sm text-muted">Branding</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v2.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/04.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Mobile App Icon Design</h3>
+                     <span class="font-size-sm text-muted">Mobile App Design</span>
+                   </div>
+                 </a>
+               </div>
+               <div class="rounded tns-item tns-slide-active" id="tns2-item0">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v1.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/01.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Pink Fur Light Bulb Creative Concept</h3>
+                     <span class="font-size-sm text-muted">Web Design</span>
+                   </div>
+                 </a>
+               </div>
+               <div class="rounded tns-item tns-slide-active" id="tns2-item1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v2.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/02.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Minimalistic Mobile Interface</h3>
+                     <span class="font-size-sm text-muted">Mobile Apps</span>
+                   </div>
+                 </a>
+               </div>
+               <div class="rounded tns-item tns-slide-active" id="tns2-item2">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v1.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/03.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Hardcover Book Concept</h3>
+                     <span class="font-size-sm text-muted">Branding</span>
+                   </div>
+                 </a>
+               </div>
+               <div class="rounded tns-item" id="tns2-item3" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v2.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/04.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Mobile App Icon Design</h3>
+                     <span class="font-size-sm text-muted">Mobile App Design</span>
+                   </div>
+                 </a>
+               </div>
+             <div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v1.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/01.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Pink Fur Light Bulb Creative Concept</h3>
+                     <span class="font-size-sm text-muted">Web Design</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v2.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/02.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Minimalistic Mobile Interface</h3>
+                     <span class="font-size-sm text-muted">Mobile Apps</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v1.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/03.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Hardcover Book Concept</h3>
+                     <span class="font-size-sm text-muted">Branding</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v2.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/04.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Mobile App Icon Design</h3>
+                     <span class="font-size-sm text-muted">Mobile App Design</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v1.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/01.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Pink Fur Light Bulb Creative Concept</h3>
+                     <span class="font-size-sm text-muted">Web Design</span>
+                   </div>
+                 </a>
+               </div><div class="rounded tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                 <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="portfolio-single-v2.html">
+                   <div class="cs-portfolio-card-img">
+                     <img src="https://createx.vercel.app/assets/img/creative-agency/portfolio/02.jpg" alt="Card image">
+                   </div>
+                   <div class="cs-portfolio-card-body">
+                     <h3 class="cs-portfolio-card-title">Minimalistic Mobile Interface</h3>
+                     <span class="font-size-sm text-muted">Mobile Apps</span>
+                   </div>
+                 </a>
+               </div></div></div></div></div>
+           </div>
+           <div class="d-flex justify-content-center align-items-center flex-md-row flex-column px-3">
+             <h3 class="mb-md-0">Fallen in love with our works?</h3>
+             <a href="portfolio.html" class="ml-md-4 btn btn-lg btn-primary btn-pill">View portfolio</a>
+           </div>
+         </div>
+       </section>
+ 
+ 
+       <!-- Brands -->
+       <section class="container mt-md-4 py-lg-6 pt-5 pb-sm-5 pb-4 px-0">
+         <div class="cs-carousel cs-nav-outside">
+           <div class="tns-outer" id="tns3-ow"><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">19 to 22</span>  of 12</div><div id="tns3-mw" class="tns-ovh"><div class="tns-inner" id="tns3-iw"><div class="cs-carousel-inner  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" data-carousel-options="{
+             &quot;nav&quot;: false,
+             &quot;controls&quot;: false,
+             &quot;autoplay&quot;: true,
+             &quot;autoplayTimeout&quot;: 4000,
+             &quot;responsive&quot;: {
+               &quot;0&quot;: {
+                 &quot;items&quot;: 2
+               },
+               &quot;576&quot;: {
+                 &quot;items&quot;: 3
+               },
+               &quot;768&quot;: {
+                 &quot;items&quot;: 4
+               },
+               &quot;992&quot;: {
+                 &quot;items&quot;: 5
+               },
+               &quot;1200&quot;: {
+                 &quot;items&quot;: 6
+               }
+             }
+           }" id="tns3" style="transform: translate3d(-60%, 0px, 0px);"><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/wisecat.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/wisecat-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/curtis.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/curtis-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/gabor.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/gabor-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/huggies.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/huggies-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/lovato.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/lovato-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/xrite.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/xrite-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/rainx.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/rainx-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/soundcloud.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/soundcloud-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/exxon.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/exxon-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item" id="tns3-item0" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/coca-cola.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/coca-cola-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item" id="tns3-item1" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/bassett-furniture.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/bassett-furniture-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item" id="tns3-item2" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/albatron.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/albatron-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item" id="tns3-item3" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/wisecat.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/wisecat-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item" id="tns3-item4" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/curtis.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/curtis-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item" id="tns3-item5" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/gabor.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/gabor-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item" id="tns3-item6" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/huggies.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/huggies-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item" id="tns3-item7" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/lovato.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/lovato-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item" id="tns3-item8" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/xrite.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/xrite-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item tns-slide-active" id="tns3-item9">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/rainx.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/rainx-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item tns-slide-active" id="tns3-item10">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/soundcloud.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/soundcloud-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+             <div class="px-3 text-center tns-item tns-slide-active" id="tns3-item11">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/exxon.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/exxon-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div>
+           <div class="px-3 text-center tns-item tns-slide-cloned tns-slide-active">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/coca-cola.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/coca-cola-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/bassett-furniture.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/bassett-furniture-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/albatron.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/albatron-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/wisecat.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/wisecat-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/curtis.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/curtis-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/gabor.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/gabor-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/huggies.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/huggies-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/lovato.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/lovato-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div><div class="px-3 text-center tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+               <a href="#" class="cs-swap-image">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/xrite.svg" class="cs-swap-to" width="120" alt="Brand logo hover">
+                 <img src="https://createx.vercel.app/assets/img/creative-agency/logo/xrite-g.svg" class="cs-swap-from" width="120" alt="Brand logo">
+               </a>
+             </div></div></div></div></div>
+         </div>
+       </section>
+ 
+ 
+       <!-- Testimonials -->
+       <section class="container pb-5 pb-lg-4">
+         <div class="row">
+           <div class="col-md-6">
+             <h3 class="h6 mb-2 text-uppercase">Testimonials</h3>
+             <h2 class="h1 mb-lg-5 mb-4 pb-2">What they say about us</h2>
+ 
+             <!-- Carousel custom controls -->
+             <div class="tns-custom-controls cs-controls-inverse d-md-flex d-none mb-n5 mx-0" id="tns-custom-controls" tabindex="0" aria-label="Carousel Navigation">
+               <button class="mb-n2" type="button" data-controls="prev" tabindex="-1" aria-controls="tns4">
+                 <i class="cxi-arrow-left"></i>
+               </button>
+               <button class="mb-n2" type="button" data-controls="next" tabindex="-1" aria-controls="tns4">
+                 <i class="cxi-arrow-right"></i>
+               </button>
+             </div>
+ 
+             <!-- Carousel -->
+             <div class="cs-carousel cs-nav-outside">
+               <div class="tns-outer" id="tns4-ow"><div class="tns-nav" aria-label="Carousel Pagination" style="display: none;"><button type="button" data-nav="0" aria-controls="tns4" style="" aria-label="Carousel Page 1 (Current Slide)" class="tns-nav-active"></button><button type="button" data-nav="1" tabindex="-1" aria-controls="tns4" style="" aria-label="Carousel Page 2"></button></div><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">3</span>  of 2</div><div id="tns4-mw" class="tns-ovh tns-ah" style="height: 336px;"><div class="tns-inner" id="tns4-iw"><div class="cs-carousel-inner  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" data-carousel-options="{
+                 &quot;gutter&quot;: 15,
+                 &quot;controlsContainer&quot;: &quot;#tns-custom-controls&quot;,
+                 &quot;autoHeight&quot;: true,
+                 &quot;responsive&quot;: {
+                   &quot;0&quot;: {
+                     &quot;nav&quot;: true
+                   },
+                   &quot;768&quot;: {
+                     &quot;nav&quot;: false
+                   }
+                 }
+               }" id="tns4" style="transition-duration: 0s; transform: translate3d(-33.3333%, 0px, 0px);"><blockquote class="tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                   <img class="mb-4 rounded-circle loaded tns-complete" src="https://avatars2.githubusercontent.com/u/72256856?s=400&u=6541d71422cceb851dd3b22ecab01e3cc8c90057&v=4" width="72" alt="Author">
+                   <p>Hi, I am a teenage programmer who turns my ideas into software. It may seem like bad software at first glance, but it is not.</p>
+                   <footer>
+                     <h3 class="h6 mb-0">Aryia Behroziuan</h3>
+                     <span class="font-size-sm text-muted">Developer</span>
+               </div></div></div></div>
+             </div>
+           </div>
+ 
+           <!-- Image -->
+           <div class="col-lg-5 col-md-6 d-md-block d-none ml-lg-auto">
+             <img class="mb-lg-n6 rounded" src="https://createx.vercel.app/assets/img/creative-agency/testimonials/03.jpg" alt="Testimonials">
+           </div>
+         </div>
+       </section>
+ 
+       
+       <!-- Blog (Recent posts) -->
+       <section class="bg-secondary pt-lg-6 py-5">
+         <div class="container pt-3 pt-lg-0">
+           <h3 class="h6 mb-2 text-uppercase">Our blog</h3>
+           <h2 class="h1 mb-lg-5 mb-4 pb-2 d-flex align-items-center justify-content-between">
+             Recent news
+             <a href="blog.html" class="btn btn-outline-primary btn-pill">View blog</a>
+           </h2>
+           <div class="row">
+ 
+             <!-- Post card: image fade in -->
+             <div class="col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+               <article class="cs-image-fade card card-hover box-shadow" style="background-image: url(https://createx.vercel.app/assets/img/creative-agency/blog/recent/01.jpg);">
+                 <div class="cs-image-inner d-flex flex-column justify-content-between h-100 p-3">
+                   <div class="card-header border-0 pb-0">
+                     <ul class="nav nav-muted mb-2 pb-1">
+                       <li class="nav-item mr-2">
+                         <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                           Creativity
+                         </a>
+                         <span class="cs-inner-text text-border px-1">|</span>
+                       </li>
+                       <li class="nav-item mr-2">
+                         <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                           April 9, 2020
+                         </a>
+                       </li>
+                     </ul>
+                   </div>
+                   <div class="card-body pt-0" style="min-height: 15rem;">
+                     <h3 class="h5 mb-2 pb-1">
+                       <a class="cs-inner-text nav-link" href="blog-single.html">
+                         Definitive Guide to Make a Daily More Productive Working Flow.
+                       </a>
+                     </h3>
+                   </div>
+                   <div class="card-footer border-0">
+                     <div class="h6 mb-0 text-right">
+                       <a class="cs-inner-text nav-link py-3" href="blog-single.html">
+                         Read more
+                       </a>
+                       <i class="cs-inner-text cxi-arrow-right align-middle h5 mb-0 ml-2 card-text"></i>
+                     </div>
+                   </div>
+                 </div>
+               </article>
+             </div>
+ 
+             <!-- Post card: image fade in -->
+             <div class="col-lg-4 col-sm-6 mb-sm-grid-gutter mb-3">
+               <article class="cs-image-fade card card-hover box-shadow" style="background-image: url(https://createx.vercel.app/assets/img/creative-agency/blog/recent/02.jpg);">
+                 <div class="cs-image-inner d-flex flex-column justify-content-between h-100 p-3">
+                   <div class="card-header border-0 pb-0">
+                     <ul class="nav nav-muted mb-2 pb-1">
+                       <li class="nav-item mr-2">
+                         <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                           Design
+                         </a>
+                         <span class="cs-inner-text text-border px-1">|</span>
+                       </li>
+                       <li class="nav-item mr-2">
+                         <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                           April 9, 2020
+                         </a>
+                       </li>
+                     </ul>
+                   </div>
+                   <div class="card-body pt-0" style="min-height: 15rem;">
+                     <h3 class="h5 mb-2 pb-1">
+                       <a class="cs-inner-text nav-link" href="blog-single.html">
+                         Outdoor Work: a Designer’s Checklist for Every UX Project..
+                       </a>
+                     </h3>
+                   </div>
+                   <div class="card-footer border-0">
+                     <div class="h6 mb-0 text-right">
+                       <a class="cs-inner-text nav-link py-3" href="blog-single.html">
+                         Read more
+                       </a>
+                       <i class="cs-inner-text cxi-arrow-right align-middle h5 mb-0 ml-2 card-text"></i>
+                     </div>
+                   </div>
+                 </div>
+               </article>
+             </div>
+ 
+             <!-- Post card: image fade in -->
+             <div class="col-lg-4 col-sm-6 d-sm-none d-lg-block mb-sm-grid-gutter mb-3">
+               <article class="cs-image-fade card card-hover box-shadow" style="background-image: url(https://createx.vercel.app/assets/img/creative-agency/blog/recent/03.jpg);">
+                 <div class="cs-image-inner d-flex flex-column justify-content-between h-100 p-3">
+                   <div class="card-header border-0 pb-0">
+                     <ul class="nav nav-muted mb-2 pb-1">
+                       <li class="nav-item mr-2">
+                         <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                           Creativity
+                         </a>
+                         <span class="cs-inner-text text-border px-1">|</span>
+                       </li>
+                       <li class="nav-item mr-2">
+                         <a class="cs-inner-text nav-link d-inline-block mr-2 p-0 font-size-sm font-weight-normal" href="#">
+                           April 9, 2020
+                         </a>
+                       </li>
+                     </ul>
+                   </div>
+                   <div class="card-body pt-0" style="min-height: 15rem;">
+                     <h3 class="h5 mb-2 pb-1">
+                       <a class="cs-inner-text nav-link" href="blog-single.html">
+                         Creativo Para Jóvenes: a Designer’s UI/UX Complete Checklist.
+                       </a>
+                     </h3>
+                   </div>
+                   <div class="card-footer border-0">
+                     <div class="h6 mb-0 text-right">
+                       <a class="cs-inner-text nav-link py-3" href="blog-single.html">
+                         Read more
+                       </a>
+                       <i class="cs-inner-text cxi-arrow-right align-middle h5 mb-0 ml-2 card-text"></i>
+                     </div>
+                   </div>
+                 </div>
+               </article>
+             </div>
+           </div>
+         </div>
+       </section>
+ 
+       
+       <!-- Achievements -->
+
+
+       
+       <!-- Team -->
+
+ 
+ 
+       <!-- Contact links -->
+       <section class="container mb-4 mb-sm-5 mt-md-4 mt-lg-0 px-3 py-lg-6 py-5">
+         <h2 class="h3 mb-5 pb-2 text-center">Let's build something amazing together!</h2>
+         <div class="row justify-content-center px-2 px-sm-0">
+           <div class="col-md-3 col-sm-4 col px-2 px-sm-3">
+             <h3 class="h6 pb-lg-3 pb-2 text-uppercase text-muted text-center">Follow us</h3>
+             <a class="d-block" href="#">
+               <img class="rounded" src="https://createx.vercel.app/assets/img/creative-agency/logo/block-dribbble.svg" alt="Dribble">
+             </a>
+             <a class="mt-sm-4 mt-3 d-block" href="#">
+               <img class="rounded" src="https://createx.vercel.app/assets/img/creative-agency/logo/block-behance.svg" alt="Behance">
+             </a>
+           </div>
+           <div class="divider-vertical d-sm-block d-none offset-sm-1"></div>
+           <div class="col-md-3 col-sm-4 col offset-sm-1 px-2 px-sm-3">
+             <h3 class="h6 pb-lg-3 pb-2 text-uppercase text-muted text-center">Get in touch</h3>
+             <a class="d-block" href="#">
+               <img class="rounded" src="https://createx.vercel.app/assets/img/creative-agency/logo/block-upwork.svg" alt="Upwork">
+             </a>
+             <a class="mt-sm-4 mt-3 d-block" href="mailto:hello@example.com">
+               <img class="rounded" src="https://createx.vercel.app/assets/img/creative-agency/logo/block-email.svg" alt="Email">
+             </a>
+           </div>
+         </div>
+       </section>
+     </main><!-- / Main content: .cs-page-wrapper -->
+ 
+ 
+     <!-- Footer -->
+     <footer class="cs-footer pt-3 bg-dark">
+       <div class="container py-lg-5 py-4">
+         <div class="row">
+           <div class="col-md-3 col-sm-6 order-md-4 order-sm-3 order-4 mb-md-0 mb-4">
+             <h3 class="h6 mb-3 text-uppercase text-light">Subscribe</h3>
+             <form>
+               <div class="input-group-overlay input-group-light form-group mb-2 pb-1">
+                 <input class="form-control appended-form-control" type="text" placeholder="Email address*">
+                 <div class="input-group-append-overlay">
+                   <span class="input-group-text">
+                     <button class="btn btn-link bt-sm px-0" type="submit">
+                       <i class="cxi-arrow-right lead mt-n1"></i>
+                     </button>
+                   </span>
+                 </div>
+               </div>
+               <small class="form-text text-light">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
+             </form>
+           </div>
+         </div>
+         <div class="d-flex justify-content-between mt-2 pt-1">
+           <div class="d-flex align-items-end">
+             <span class="d-sm-inline-block d-none text-light font-size-sm mr-3">Back to top</span>
+             <a class="btn-scroll-top position-static rounded-circle" href="#top" data-scroll="">
+               <i class="btn-scroll-top-icon cxi-angle-up"></i>
+             </a>
+           </div>
+         </div>
+       </div>
+     </footer>
+ 
+ 
+     <!-- Vendor scripts: js libraries and plugins-->
+     <script src="https://createx.vercel.app/assets/vendor/jquery/dist/jquery.slim.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/jarallax/dist/jarallax.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/parallax-js/dist/parallax.min.js"></script>
+     <script src="https://createx.vercel.app/assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+ 
+     <!-- Main theme script-->
+     <script src="https://createx.vercel.app/assets/js/theme.min.js"></script>
+   
+ </body>
+</html>
