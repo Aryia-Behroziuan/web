@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1000px){
+     .one-title{
+          position: fixed;
+          background-color: white;
+     }
+     .bild{
+          margin-top: 70px;
+     }
+     .main-lop{
+          display: none;
+     }
+}
+html::-webkit-scrollbar {
+     display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}

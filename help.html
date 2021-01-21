@@ -1,0 +1,763 @@
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Around | Web Studio</title>
+  <!-- SEO Meta Tags-->
+  <meta name="description" content="Around - Multipurpose Bootstrap Template">
+  <meta name="keywords" content="bootstrap, business, consulting, coworking space, services, creative agency, dashboard, e-commerce, mobile app showcase, multipurpose, product landing, shop, software, ui kit, web studio, landing, html5, css3, javascript, gallery, slider, touch, creative">
+  <meta name="author" content="Createx Studio">
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon and Touch Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+  <meta name="msapplication-TileColor" content="#766df4">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Page loading styles-->
+  <style>
+    .cs-page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all .4s .2s ease-in-out;
+      transition: all .4s .2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+    .cs-page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    .cs-page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out;
+      opacity: 0;
+    }
+    .cs-page-loading.active > .cs-page-loading-inner {
+      opacity: 1;
+    }
+    .cs-page-loading-inner > span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #737491;
+    }
+    .cs-page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: .75rem;
+      vertical-align: text-bottom;
+      border: .15em solid #766df4;
+      border-right-color: transparent;
+      border-radius: 50%;
+      -webkit-animation: spinner .75s linear infinite;
+      animation: spinner .75s linear infinite;
+    }
+    @-webkit-keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes spinner {
+      100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+    }
+    
+  </style>
+  <!-- Page loading scripts-->
+  <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-WKV3GT5"></script><script>
+    (function () {
+      window.onload = function () {
+        var preloader = document.querySelector('.cs-page-loading');
+        preloader.classList.remove('active');
+        setTimeout(function () {
+          preloader.remove();
+        }, 2000);
+      };
+    })();
+    
+  </script>
+  <!-- Vendor Styles-->
+  <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css">
+  <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css">
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="css/theme.min.css">
+  <!-- Google Tag Manager-->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WKV3GT5');
+  </script>
+<meta http-equiv="origin-trial" content="A0kLJQ0EdHeF98R8bup/3ZtM4vmv/qTDf1T2qVOOrjHUMWqhDXGGrxHTI+nR/ynTxnFDdRTJBjlhgfvosygLLAoAAACOeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGVhZHNlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjEwNjczMzQzLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script src="https://www.googleadservices.com/pagead/conversion/717446051/?random=1610540823514&amp;cv=9&amp;fst=1610540823514&amp;num=1&amp;value=0&amp;label=F-BmCKDx2sUBEKO3jdYC&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=812&amp;u_w=375&amp;u_ah=812&amp;u_aw=375&amp;u_cd=24&amp;u_his=4&amp;u_tz=210&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2wgbu0&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Faround.createx.studio%2Fdemo-web-studio.html&amp;ref=https%3A%2F%2Faround.createx.studio%2F&amp;tiba=Around%20%7C%20Web%20Studio&amp;hn=www.googleadservices.com&amp;bttype=purchase&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><style></style><style></style><style></style></head>
+<!-- Body-->
+<body>
+  <!-- Google Tag Manager (noscript)-->
+  <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKV3GT5" height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+  </noscript>
+  <!-- Page loading spinner-->
+  
+  <main class="cs-page-wrapper">
+    <!-- Sign In Modal-->
+    <div class="modal fade" id="modal-signin" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content border-0">
+          <div class="cs-view show" id="modal-signin-view">
+            <div class="modal-header border-0 bg-dark px-4">
+              <h4 class="modal-title text-light">Sign in</h4>
+              <button class="close text-light" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body px-4">
+              <p class="font-size-ms text-muted">Sign in to your account using email and password provided during registration.</p>
+              <form class="needs-validation" novalidate="">
+                <div class="input-group-overlay form-group">
+                  <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="fe-mail"></i></span></div>
+                  <input class="form-control prepended-form-control" type="email" placeholder="Email" required="">
+                </div>
+                <div class="input-group-overlay cs-password-toggle form-group">
+                  <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="fe-lock"></i></span></div>
+                  <input class="form-control prepended-form-control" type="password" placeholder="Password" required="">
+                  <label class="cs-password-toggle-btn">
+                    <input class="custom-control-input" type="checkbox"><i class="fe-eye cs-password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                  </label>
+                </div>
+                <div class="d-flex justify-content-between align-items-center form-group">
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" id="keep-signed">
+                    <label class="custom-control-label" for="keep-signed">Keep me signed in</label>
+                  </div><a class="nav-link-style font-size-ms" href="password-recovery.html">Forgot password?</a>
+                </div>
+                <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+                <p class="font-size-sm pt-3 mb-0">Don't have an account? <a href="#" class="font-weight-medium" data-view="#modal-signup-view">Sign up</a></p>
+              </form>
+            </div>
+          </div>
+          <div class="cs-view" id="modal-signup-view">
+            <div class="modal-header border-0 bg-dark px-4">
+              <h4 class="modal-title text-light">Sign up</h4>
+              <button class="close text-light" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body px-4">
+              <p class="font-size-ms text-muted">Registration takes less than a minute but gives you full control over your orders.</p>
+              <form class="needs-validation" novalidate="">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Full name" required="">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Email" required="">
+                </div>
+                <div class="cs-password-toggle form-group">
+                  <input class="form-control" type="password" placeholder="Password" required="">
+                  <label class="cs-password-toggle-btn">
+                    <input class="custom-control-input" type="checkbox"><i class="fe-eye cs-password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                  </label>
+                </div>
+                <div class="cs-password-toggle form-group">
+                  <input class="form-control" type="password" placeholder="Confirm password" required="">
+                  <label class="cs-password-toggle-btn">
+                    <input class="custom-control-input" type="checkbox"><i class="fe-eye cs-password-toggle-indicator"></i><span class="sr-only">Show password</span>
+                  </label>
+                </div>
+                <button class="btn btn-primary btn-block" type="submit">Sign up</button>
+                <p class="font-size-sm pt-3 mb-0">Already have an account? <a href="#" class="font-weight-medium" data-view="#modal-signin-view">Sign in</a></p>
+              </form>
+            </div>
+          </div>
+          <div class="modal-body text-center px-4 pt-2 pb-4">
+            <hr>
+            <p class="font-size-sm font-weight-medium text-heading pt-4">Or sign in with</p><a class="social-btn sb-facebook sb-lg mx-1 mb-2" href="#"><i class="fe-facebook"></i></a><a class="social-btn sb-twitter sb-lg mx-1 mb-2" href="#"><i class="fe-twitter"></i></a><a class="social-btn sb-instagram sb-lg mx-1 mb-2" href="#"><i class="fe-instagram"></i></a><a class="social-btn sb-google sb-lg mx-1 mb-2" href="#"><i class="fe-google"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar (Floating light)-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="cs-header navbar navbar-expand-lg navbar-floating navbar-sticky navbar-dark" data-scroll-header="">
+      <div class="container px-0 px-xl-3">
+        <button class="navbar-toggler ml-n2 mr-2" type="button" data-toggle="offcanvas" data-offcanvas-id="primaryMenu"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand order-lg-1 mx-auto ml-lg-0 pr-lg-2 mr-lg-4" href="index.html"><img class="navbar-floating-logo d-none d-lg-block" width="153" src="img/logo/logo-light.png" alt="Around"><img class="navbar-stuck-logo" width="153" src="img/logo/logo-dark.png" alt="Around"><img class="d-lg-none" width="58" src="img/logo/logo-icon.png" alt="Around"></a>
+        <div class="d-flex align-items-center order-lg-3 ml-lg-auto"><a class="nav-link-style font-size-sm text-nowrap" href="#modal-signin" data-toggle="modal" data-view="#modal-signin-view"><i class="fe-user font-size-xl mr-2"></i>Sign in</a><a class="btn btn-primary ml-grid-gutter d-none d-lg-inline-block navbar-btn" href="#modal-signin" data-toggle="modal" data-view="#modal-signup-view">Sign up</a><a class="btn btn-primary ml-grid-gutter d-none d-lg-inline-block navbar-stuck-btn" href="#modal-signin" data-toggle="modal" data-view="#modal-signup-view">Sign up</a></div>
+        <div class="cs-offcanvas-collapse order-lg-2" id="primaryMenu">
+          <div class="cs-offcanvas-cap navbar-box-shadow">
+            <h5 class="mt-1 mb-0">Menu</h5>
+            <button class="close lead" type="button" data-toggle="offcanvas" data-offcanvas-id="primaryMenu"><span aria-hidden="true">×</span></button>
+          </div>
+          <div class="cs-offcanvas-body">
+            <!-- Menu-->
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown dropdown-mega active"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Demos</a>
+                <div class="dropdown-menu"><a class="dropdown-column dropdown-column-img bg-secondary" href="index.html" style="background-image: url(img/demo/menu-banner.jpg);"></a>
+                  <div class="dropdown-column"><a class="dropdown-item" href="index.html">Web Template Presentation</a><a class="dropdown-item" href="demo-business-consulting.html">Business Consulting</a><a class="dropdown-item" href="demo-shop-homepage.html">Shop Homepage</a><a class="dropdown-item" href="demo-booking-directory.html">Booking / Directory</a><a class="dropdown-item" href="demo-creative-agency.html">Creative Agency</a><a class="dropdown-item" href="demo-web-studio.html">Web Studio</a><a class="dropdown-item" href="demo-product-software.html">Product Landing - Software</a></div>
+                  <div class="dropdown-column"><a class="dropdown-item" href="demo-product-gadget.html">Product Landing - Gadget</a><a class="dropdown-item" href="demo-mobile-app.html">Mobile App Showcase</a><a class="dropdown-item" href="demo-coworking-space.html">Coworking Space</a><a class="dropdown-item" href="demo-event-landing.html">Event Landing</a><a class="dropdown-item" href="demo-marketing-seo.html">Digital Marketing &amp; SEO</a><a class="dropdown-item" href="demo-food-blog.html">Food Blog</a><a class="dropdown-item" href="demo-personal-portfolio.html">Personal Portfolio</a></div>
+                </div>
+              </li>
+              <li class="nav-item dropdown dropdown-mega"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Templates</a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-column mb-2 mb-lg-0">
+                    <h5 class="dropdown-header">Blog</h5><a class="dropdown-item" href="blog-grid-rs.html">Grid Right Sidebar</a><a class="dropdown-item" href="blog-grid-ls.html">Grid Left Sidebar</a><a class="dropdown-item" href="blog-grid-ns.html">Grid No Sidebar</a><a class="dropdown-item" href="blog-list-rs.html">List Right Sidebar</a><a class="dropdown-item" href="blog-list-ls.html">List Left Sidebar</a><a class="dropdown-item" href="blog-list-ns.html">List No Sidebar</a><a class="dropdown-item" href="blog-single-rs.html">Single Post Right Sidebar</a><a class="dropdown-item" href="blog-single-ls.html">Single Post Left Sidebar</a><a class="dropdown-item" href="blog-single-ns.html">Single Post No Sidebar</a>
+                  </div>
+                  <div class="dropdown-column mb-2 mb-lg-0">
+                    <h5 class="dropdown-header">Portfolio</h5><a class="dropdown-item" href="portfolio-style-1.html">Grid Style 1</a><a class="dropdown-item" href="portfolio-style-2.html">Grid Style 2</a><a class="dropdown-item" href="portfolio-style-3.html">Grid Style 3</a><a class="dropdown-item" href="portfolio-single-side-gallery-grid.html">Project Side Gallery (Grid)</a><a class="dropdown-item" href="portfolio-single-side-gallery-list.html">Project Side Gallery (List)</a><a class="dropdown-item" href="portfolio-single-carousel.html">Project Carousel</a><a class="dropdown-item" href="portfolio-single-wide-gallery.html">Project Wide Gallery</a>
+                  </div>
+                  <div class="dropdown-column mb-2 mb-lg-0">
+                    <h5 class="dropdown-header">Shop</h5><a class="dropdown-item" href="shop-ls.html">Grid Left Sidebar</a><a class="dropdown-item" href="shop-rs.html">Grid Right Sidebar</a><a class="dropdown-item" href="shop-ns.html">Grid No Sidebar</a><a class="dropdown-item" href="shop-single.html">Single Product</a><a class="dropdown-item" href="checkout.html">Cart &amp; Checkout</a><a class="dropdown-item" href="order-tracking.html">Order Tracking</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Account</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Dashboard</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="dashboard-orders.html">Orders</a></li>
+                      <li><a class="dropdown-item" href="dashboard-sales.html">Sales</a></li>
+                      <li><a class="dropdown-item" href="dashboard-messages.html">Messages</a></li>
+                      <li><a class="dropdown-item" href="dashboard-followers.html">Followers</a></li>
+                      <li><a class="dropdown-item" href="dashboard-reviews.html">Reviews</a></li>
+                      <li><a class="dropdown-item" href="dashboard-favorites.html">Favorites</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Account Settings</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="account-profile.html">Profile Info</a></li>
+                      <li><a class="dropdown-item" href="account-payment.html">Payment Methods</a></li>
+                      <li><a class="dropdown-item" href="account-notifications.html">Notifications</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="signin-illustration.html">Sign In - Illustration</a></li>
+                  <li><a class="dropdown-item" href="signin-image.html">Sign In - Image</a></li>
+                  <li><a class="dropdown-item" href="signin-signup.html">Sign In - Sign Up</a></li>
+                  <li><a class="dropdown-item" href="password-recovery.html">Password Recovery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Pages</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About</a></li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Contacts</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="contacts-v1.html">Contacts v.1</a></li>
+                      <li><a class="dropdown-item" href="contacts-v2.html">Contacts v.2</a></li>
+                      <li><a class="dropdown-item" href="contacts-v3.html">Contacts v.3</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Help Center</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="help-topics.html">Help Topics</a></li>
+                      <li><a class="dropdown-item" href="help-single-topic.html">Single Topic</a></li>
+                      <li><a class="dropdown-item" href="help-submit-request.html">Submit a Request</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">404 Not Found</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="404-simple.html">Simple Text</a></li>
+                      <li><a class="dropdown-item" href="404-illustration.html">Illustration</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#" data-toggle="dropdown">Coming Soon</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="coming-soon-image.html">Image</a></li>
+                      <li><a class="dropdown-item" href="coming-soon-illustration.html">Illustration</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Docs / UI Kit</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="docs/dev-setup.html">
+                      <div class="d-flex align-items-center">
+                        <div class="font-size-xl text-muted"><i class="fe-file-text"></i></div>
+                        <div class="pl-3"><span class="d-block text-heading">Documentation</span><small class="d-block text-muted">Kick-start customization</small></div>
+                      </div></a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="components/typography.html">
+                      <div class="d-flex align-items-center">
+                        <div class="font-size-xl text-muted"><i class="fe-layers"></i></div>
+                        <div class="pl-3"><span class="d-block text-heading">UI Kit<span class="badge badge-danger ml-2">50+</span></span><small class="d-block text-muted">Flexible components</small></div>
+                      </div></a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="docs/changelog.html">
+                      <div class="d-flex align-items-center">
+                        <div class="font-size-xl text-muted"><i class="fe-edit"></i></div>
+                        <div class="pl-3"><span class="d-block text-heading">Changelog<span class="badge badge-success ml-2">v1.2.0</span></span><small class="d-block text-muted">Regular updates</small></div>
+                      </div></a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="mailto:support@createx.studio">
+                      <div class="d-flex align-items-center">
+                        <div class="font-size-xl text-muted"><i class="fe-life-buoy"></i></div>
+                        <div class="pl-3"><span class="d-block text-heading">Support</span><small class="d-block text-muted">support@createx.studio</small></div>
+                      </div></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Page content-->
+    <!-- Hero-->
+    <section class="jarallax bg-dark pt-5 pt-lg-7 pb-7" data-jarallax="" data-speed="0.3">
+      
+      <div class="cs-shape cs-shape-bottom cs-shape-curve bg-body">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 185.4">
+          <path fill="currentColor" d="M3000,0v185.4H0V0c496.4,115.6,996.4,173.4,1500,173.4S2503.6,115.6,3000,0z"></path>
+        </svg>
+      </div>
+      <!-- Text-->
+      <div class="container bg-overlay-content text-center pt-6 pt-lg-7">
+        <h2 class="font-size-xl font-weight-normal text-light">Award winning web design agency</h2>
+        <h1 class="text-light">Get your website done</h1>
+      </div>
+      <div class="d-block d-sm-none" style="height: 100px;"></div>
+      <div class="d-none d-sm-block d-lg-none" style="height: 300px;"></div>
+      <div class="d-none d-lg-block" style="height: 400px;"></div>
+    <div id="jarallax-container-0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div class="jarallax-img" style="background-image: url(&quot;img/demo/web-studio/cubes-bg.jpg&quot;); object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 375.2px; height: 690.08px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: 60.96px; transform: translate3d(0px, -60.96px, 0px);" data-jarallax-original-styles="background-image: url(img/demo/web-studio/cubes-bg.jpg);"></div></div></section>
+    <!-- Featured Projects (carousel)-->
+    <section class="container bg-overlay-content">
+      <div class="d-block d-sm-none" style="margin-top: -160px;"></div>
+      <div class="d-none d-sm-block d-lg-none" style="margin-top: -360px;"></div>
+      <div class="d-none d-lg-block" style="margin-top: -450px;"></div>
+      <div class="cs-frame-browser border-light cs-carousel mx-auto" style="max-width: 915px;">
+        <div class="cs-frame-browser-toolbar">
+          <div class="text-nowrap mr-3"><span class="cs-frame-browser-button bg-danger"></span><span class="cs-frame-browser-button bg-warning"></span><span class="cs-frame-browser-button bg-success"></span></div><span class="cs-carousel-label font-size-sm text-light opacity-75">https://mobileapp.com</span>
+        </div>
+        <div class="cs-frame-browser-body">
+          <div class="tns-outer" id="tns1-ow"><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">4</span>  of 3</div><div class="tns-inner" id="tns1-iw"><div class="cs-carousel-inner tns-slider tns-gallery tns-subpixel tns-calc tns-horizontal" data-carousel-options="{&quot;mode&quot;: &quot;gallery&quot;, &quot;controls&quot;: false, &quot;nav&quot;: false, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 6000}" id="tns1">
+            <div data-carousel-label="https://mobileapp.com" class="tns-item tns-normal" id="tns1-item0" style="" aria-hidden="true" tabindex="-1"><img class="rounded" src="img/demo/web-studio/slider/01.jpg" alt="Screenshot">
+            </div>
+            <div data-carousel-label="https://bookingapp.com" class="tns-item tns-normal" id="tns1-item1" style="" aria-hidden="true" tabindex="-1"><img class="rounded" src="img/demo/web-studio/slider/02.jpg" alt="Screenshot">
+            </div>
+            <div data-carousel-label="https://creativeagency.com" class="tns-item tns-normal" id="tns1-item2" style="" aria-hidden="true" tabindex="-1"><img class="rounded" src="img/demo/web-studio/slider/03.jpg" alt="Screenshot">
+            </div>
+          <div data-carousel-label="https://mobileapp.com" class="tns-item tns-slide-cloned tns-slide-active tns-fadeIn" style="left: 0%;"><img class="rounded" src="img/demo/web-studio/slider/01.jpg" alt="Screenshot">
+            </div></div></div></div>
+        </div>
+        <div class="cs-carousel-pager pt-4 text-nowrap text-center mt-2 mb-n2">
+          <button class="active" data-nav="" data-goto="1"></button>
+          <button data-nav="" data-goto="2" class=""></button>
+          <button data-nav="" data-goto="3" class=""></button>
+        </div>
+      </div>
+    </section>
+    <!-- Services-->
+    <section class="container pt-5 pt-lg-6">
+      <h2 class="text-center">What we offer</h2>
+      <p class="text-center text-muted mb-0">We provide wide range of services in web design and development</p>
+      <!-- RWD Service-->
+      <div class="row align-items-center border-bottom py-5">
+        <div class="col-md-6 py-3"><img class="d-block mx-auto" src="img/demo/web-studio/services/01.svg" alt="Responsive Web Design">
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
+          <h3 class="h4 mb-4">Responsive Web Design</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-2 pb-1"><i class="fe-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Gathering user data, creating user flow chart, building wireframes</span></li>
+            <li class="d-flex mb-2 pb-1"><i class="fe-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Website UI / UX design for desktop and handheld devices</span></li>
+            <li class="d-flex mb-2 pb-1"><i class="fe-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Converting design mockups into responsive HTML based websites</span></li>
+          </ul>
+          <h4 class="h6 pt-2 mb-1">Tools and technologies:</h4>
+          <p class="pb-1">Sketch, Figma, Photoshop, HTML, CSS, JS</p><a class="font-weight-medium" href="#">Get a quote<i class="fe-chevron-right font-size-xl ml-1"></i></a>
+        </div>
+      </div>
+      <!-- Web Dev Service-->
+      <div class="row align-items-center border-bottom py-5">
+        <div class="col-md-6 offset-lg-1 py-3 order-md-2"><img class="d-block mx-auto" src="img/demo/web-studio/services/02.svg" alt="Web Development">
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 offset-xl-1 py-3 order-md-1">
+          <h3 class="h4 mb-4">Web Development (Software)</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-2 pb-1"><i class="fe-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Building dynamic webstise and web applications with latest technologies</span></li>
+            <li class="d-flex mb-2 pb-1"><i class="fe-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Front-end and Back-end development</span></li>
+            <li class="d-flex mb-2 pb-1"><i class="fe-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Integration with popular CMS (WordPress, Drupal, Joomla)</span></li>
+          </ul>
+          <h4 class="h6 pt-2 mb-1">Tools and technologies:</h4>
+          <p class="pb-1">PHP, Node.js, SQL, React.js, Vue.js, GraphQL</p><a class="font-weight-medium" href="#">Get a quote<i class="fe-chevron-right font-size-xl ml-1"></i></a>
+        </div>
+      </div>
+      <!-- Mobile Dev Service-->
+      <div class="row align-items-center border-bottom py-5">
+        <div class="col-md-6 py-3"><img class="d-block mx-auto" src="img/demo/web-studio/services/03.svg" alt="Mobile Apps Development">
+        </div>
+        <div class="col-xl-4 col-lg-5 col-md-6 offset-lg-1 py-3">
+          <h3 class="h4 mb-4">Mobile Apps Development</h3>
+          <ul class="list-unstyled">
+            <li class="d-flex mb-2 pb-1"><i class="fe-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Mobile apps UI design</span></li>
+            <li class="d-flex mb-2 pb-1"><i class="fe-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Hybrid mobile apps development</span></li>
+            <li class="d-flex mb-2 pb-1"><i class="fe-check-circle text-success font-size-xl mt-1 mr-3"></i><span>Native mobile apps development</span></li>
+          </ul>
+          <h4 class="h6 pt-2 mb-1">Tools and technologies:</h4>
+          <p class="pb-1">React native, Flutter, Java, Swift</p><a class="font-weight-medium" href="#">Get a quote<i class="fe-chevron-right font-size-xl ml-1"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio-->
+    <section class="container overflow-hidden pt-5 pt-md-6 pt-lg-7 pb-4 pb-md-2">
+      <h2 class="text-center pt-4 pt-md-0">Our work</h2>
+      <p class="text-center text-muted pb-4">Most recent projects we have completed</p>
+      <div class="cs-masonry-filterable mb-3">
+        <!-- Portfolio nav (Filters)-->
+        <ul class="cs-masonry-filters nav nav-tabs justify-content-center pb-4">
+          <li class="nav-item"><a class="nav-link active" href="#" data-group="all">All</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-group="web">Web</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-group="mobile">Mobile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-group="identity">Identity</a></li>
+        </ul>
+        <!-- Portfolio grid-->
+        <div class="cs-masonry-grid shuffle" data-columns="3" style="position: relative; overflow: hidden; height: 2643.23px; transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;">
+          <div class="cs-grid-item shuffle-item shuffle-item--visible" data-groups="[&quot;web&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity; transform: translate(0px, 0px) scale(1);"><a class="card card-hover border-0 box-shadow" href="portfolio-single-carousel.html"><img class="card-img-top" src="img/portfolio/01.jpg" alt="Portfolio thumb">
+              <div class="card-body text-center">
+                <h3 class="h5 nav-heading mb-2">Landing Page Design</h3>
+                <p class="font-size-sm text-muted mb-2">UI / UX Design, Web Development</p>
+              </div></a></div>
+          <div class="cs-grid-item shuffle-item shuffle-item--visible" data-groups="[&quot;web&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 441px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;"><a class="card card-hover border-0 box-shadow" href="portfolio-single-carousel.html"><img class="card-img-top" src="img/portfolio/02.jpg" alt="Portfolio thumb">
+              <div class="card-body text-center">
+                <h3 class="h5 nav-heading mb-2">Corporate Website Design</h3>
+                <p class="font-size-sm text-muted mb-2">Web Design</p>
+              </div></a></div>
+          <div class="cs-grid-item shuffle-item shuffle-item--visible" data-groups="[&quot;identity&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 881px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;"><a class="card card-hover border-0 box-shadow" href="portfolio-single-carousel.html"><img class="card-img-top" src="img/portfolio/03.jpg" alt="Portfolio thumb">
+              <div class="card-body text-center">
+                <h3 class="h5 nav-heading mb-2">Surfing Portal Logo Design</h3>
+                <p class="font-size-sm text-muted mb-2">Identity Design</p>
+              </div></a></div>
+          <div class="cs-grid-item shuffle-item shuffle-item--visible" data-groups="[&quot;web&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 1322px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;"><a class="card card-hover border-0 box-shadow" href="portfolio-single-carousel.html"><img class="card-img-top" src="img/portfolio/04.jpg" alt="Portfolio thumb">
+              <div class="card-body text-center">
+                <h3 class="h5 nav-heading mb-2">Cartzilla - Fashion Store</h3>
+                <p class="font-size-sm text-muted mb-2">E-commerce Development</p>
+              </div></a></div>
+          <div class="cs-grid-item shuffle-item shuffle-item--visible" data-groups="[&quot;mobile&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 1762px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;"><a class="card card-hover border-0 box-shadow" href="portfolio-single-carousel.html"><img class="card-img-top" src="img/portfolio/05.jpg" alt="Portfolio thumb">
+              <div class="card-body text-center">
+                <h3 class="h5 nav-heading mb-2">Mobile App Icon Design</h3>
+                <p class="font-size-sm text-muted mb-2">Mobile App Design</p>
+              </div></a></div>
+          <div class="cs-grid-item shuffle-item shuffle-item--visible" data-groups="[&quot;web&quot;]" style="position: absolute; top: 0px; left: 0px; visibility: visible; will-change: transform; opacity: 1; transform: translate(0px, 2203px) scale(1); transition-duration: 250ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-property: transform, opacity;"><a class="card card-hover border-0 box-shadow" href="portfolio-single-carousel.html"><img class="card-img-top" src="img/portfolio/06.jpg" alt="Portfolio thumb">
+              <div class="card-body text-center">
+                <h3 class="h5 nav-heading mb-2">Auto Reseller Website</h3>
+                <p class="font-size-sm text-muted mb-2">UI / UX Design, Web Development</p>
+              </div></a></div>
+        </div>
+      </div>
+      <div class="text-center"><a class="btn btn-primary" href="#">See More Projects</a></div>
+    </section>
+    <!-- Testimonials-->
+    <section class="bg-secondary mt-5 mt-md-6 mt-lg-7">
+      <div class="container py-5 py-md-6 py-lg-7">
+        <div class="row cs-carousel py-3 py-md-0">
+          <div class="col-md-8">
+            <h2 class="pb-2 mb-4 text-center text-md-left">Testimonials</h2>
+            <div class="tns-outer" id="tns2-ow"><div class="tns-controls" aria-label="Carousel Navigation" tabindex="0"><button type="button" data-controls="prev" tabindex="-1" aria-controls="tns2"><i class="fe-arrow-left"></i></button><button type="button" data-controls="next" tabindex="-1" aria-controls="tns2"><i class="fe-arrow-right"></i></button></div><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">2</span>  of 5</div><div id="tns2-mw" class="tns-ovh"><div class="tns-inner" id="tns2-iw"><div class="cs-carousel-inner  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" data-carousel-options="{&quot;nav&quot;: false, &quot;gutter&quot;: 20}" id="tns2" style="transition-duration: 0s; transform: translate3d(-14.2857%, 0px, 0px);"><blockquote class="blockquote mt-3 mb-0 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>Mattis enim ut tellus elementum sagittis vitae et leo duis.</p>
+                <footer class="media align-items-center"><img class="rounded-circle" width="42" src="img/testimonials/05.jpg" alt="Sarah Palson">
+                  <div class="media-body text-heading font-size-md font-weight-medium pl-2 ml-1">Sarah Palson</div>
+                </footer>
+              </blockquote>
+              <blockquote class="blockquote mt-3 mb-0 tns-item tns-slide-active" id="tns2-item0">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>Mattis enim ut tellus elementum sagittis vitae et leo duis.</p>
+                <footer class="media align-items-center"><img class="rounded-circle" width="42" src="img/testimonials/01.jpg" alt="Emma Brown">
+                  <div class="media-body text-heading font-size-md font-weight-medium pl-2 ml-1">Emma Brown</div>
+                </footer>
+              </blockquote>
+              <blockquote class="blockquote mt-3 mb-0 tns-item" id="tns2-item1" aria-hidden="true" tabindex="-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>Mattis enim ut tellus elementum sagittis vitae et leo duis.</p>
+                <footer class="media align-items-center"><img class="rounded-circle" width="42" src="img/testimonials/03.jpg" alt="Tim Brooks">
+                  <div class="media-body text-heading font-size-md font-weight-medium pl-2 ml-1">Tim Brooks</div>
+                </footer>
+              </blockquote>
+              <blockquote class="blockquote mt-3 mb-0 tns-item" id="tns2-item2" aria-hidden="true" tabindex="-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>Mattis enim ut tellus elementum sagittis vitae et leo duis.</p>
+                <footer class="media align-items-center"><img class="rounded-circle" width="42" src="img/testimonials/02.jpg" alt="Sanomi Smith">
+                  <div class="media-body text-heading font-size-md font-weight-medium pl-2 ml-1">Sanomi Smith</div>
+                </footer>
+              </blockquote>
+              <blockquote class="blockquote mt-3 mb-0 tns-item" id="tns2-item3" aria-hidden="true" tabindex="-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>Mattis enim ut tellus elementum sagittis vitae et leo duis.</p>
+                <footer class="media align-items-center"><img class="rounded-circle" width="42" src="img/testimonials/04.jpg" alt="Charlie Welch">
+                  <div class="media-body text-heading font-size-md font-weight-medium pl-2 ml-1">Charlie Welch</div>
+                </footer>
+              </blockquote>
+              <blockquote class="blockquote mt-3 mb-0 tns-item" id="tns2-item4" aria-hidden="true" tabindex="-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>Mattis enim ut tellus elementum sagittis vitae et leo duis.</p>
+                <footer class="media align-items-center"><img class="rounded-circle" width="42" src="img/testimonials/05.jpg" alt="Sarah Palson">
+                  <div class="media-body text-heading font-size-md font-weight-medium pl-2 ml-1">Sarah Palson</div>
+                </footer>
+              </blockquote>
+            <blockquote class="blockquote mt-3 mb-0 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <p>Mattis enim ut tellus elementum sagittis vitae et leo duis.</p>
+                <footer class="media align-items-center"><img class="rounded-circle" width="42" src="img/testimonials/01.jpg" alt="Emma Brown">
+                  <div class="media-body text-heading font-size-md font-weight-medium pl-2 ml-1">Emma Brown</div>
+                </footer>
+              </blockquote></div></div></div></div>
+          </div>
+          <div class="col-lg-3 col-md-4 offset-lg-1">
+            <div class="cs-carousel-pager d-flex flex-wrap flex-md-column justify-content-center align-items-center align-items-md-start border-left pt-4 mt-4 pl-md-3 pt-md-0 mt-md-0"><a class="cs-swap-image active mx-4 my-3 my-md-4" href="#" data-goto="1"><img class="cs-swap-to" width="136" src="img/demo/gadget-landing/logos/01_color.png" alt="Logo"><img class="cs-swap-from" width="136" src="img/demo/gadget-landing/logos/01_gray.png" alt="Logo"></a><a class="cs-swap-image mx-4 my-3 my-md-4" href="#" data-goto="2"><img class="cs-swap-to" width="130" src="img/demo/gadget-landing/logos/02_color.png" alt="Logo"><img class="cs-swap-from" width="130" src="img/demo/gadget-landing/logos/02_gray.png" alt="Logo"></a><a class="cs-swap-image mx-4 my-3 my-md-4" href="#" data-goto="3"><img class="cs-swap-to" width="114" src="img/demo/gadget-landing/logos/05_color.png" alt="Logo"><img class="cs-swap-from" width="114" src="img/demo/gadget-landing/logos/05_gray.png" alt="Logo"></a><a class="cs-swap-image mx-4 my-3 my-md-4" href="#" data-goto="4"><img class="cs-swap-to" width="103" src="img/demo/gadget-landing/logos/03_color.png" alt="Logo"><img class="cs-swap-from" width="103" src="img/demo/gadget-landing/logos/03_gray.png" alt="Logo"></a><a class="cs-swap-image mx-4 my-3 my-md-4" href="#" data-goto="5"><img class="cs-swap-to" width="143" src="img/demo/gadget-landing/logos/04_color.png" alt="Logo"><img class="cs-swap-from" width="143" src="img/demo/gadget-landing/logos/04_gray.png" alt="Logo"></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog-->
+    <section class="container py-5 py-md-6 py-lg-7 mb-4 mb-md-0">
+      <h2 class="mb-5 mt-3 mt-md-0 text-center">From the blog</h2>
+      <div class="cs-carousel">
+        <div class="tns-outer" id="tns3-ow"><div class="tns-nav" aria-label="Carousel Pagination"><button type="button" data-nav="0" aria-controls="tns3" style="" aria-label="Carousel Page 1 (Current Slide)" class="tns-nav-active"></button><button type="button" data-nav="1" tabindex="-1" aria-controls="tns3" style="" aria-label="Carousel Page 2"></button><button type="button" data-nav="2" tabindex="-1" aria-controls="tns3" style="" aria-label="Carousel Page 3"></button><button type="button" data-nav="3" tabindex="-1" aria-controls="tns3" style="" aria-label="Carousel Page 4"></button></div><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">7</span>  of 4</div><div id="tns3-mw" class="tns-ovh tns-ah" style="height: 381px;"><div class="tns-inner" id="tns3-iw"><div class="cs-carousel-inner  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" data-carousel-options="{&quot;items&quot;: 2, &quot;controls&quot;: false, &quot;autoHeight&quot;: true, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 16},&quot;850&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 16}, &quot;1100&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 23}}}" id="tns3" style="transition-duration: 0s; transform: translate3d(-37.5%, 0px, 0px);"><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Web development</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">Build Complete Websites in a Fraction of Time With This Handy Tool</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/04.jpg" alt="Charlie Welch">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Charlie Welch</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Jan 15</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Project management</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">What You Can Learn About Managing Projects</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/07.jpg" alt="Sarah Palson">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Sarah Palson</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Dec 19</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1"><span class="badge badge-lg badge-floating badge-floating-right badge-success">New</span>
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Identity design</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">Top 5 Secrets of Making Successful Corporate Identity Design</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/02.jpg" alt="Sanomi Smith">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Sanomi Smith</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Feb 12</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">CMS</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">List of Excellent Learning Management Systems</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/03.jpg" alt="Tim Brooks">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Tim Brooks</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Jan 27</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Web development</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">Build Complete Websites in a Fraction of Time With This Handy Tool</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/04.jpg" alt="Charlie Welch">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Charlie Welch</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Jan 15</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Project management</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">What You Can Learn About Managing Projects</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/07.jpg" alt="Sarah Palson">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Sarah Palson</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Dec 19</a></div>
+              </div>
+            </article>
+          </div>
+          <!-- Article-->
+          <div class="pb-2 tns-item tns-slide-active" id="tns3-item0">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1"><span class="badge badge-lg badge-floating badge-floating-right badge-success">New</span>
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Identity design</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">Top 5 Secrets of Making Successful Corporate Identity Design</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle tns-complete" width="42" src="https://around.createx.studio/img/testimonials/02.jpg" alt="Sanomi Smith">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Sanomi Smith</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Feb 12</a></div>
+              </div>
+            </article>
+          </div>
+          <!-- Article-->
+          <div class="pb-2 tns-item" id="tns3-item1" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">CMS</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">List of Excellent Learning Management Systems</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/03.jpg" alt="Tim Brooks">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Tim Brooks</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Jan 27</a></div>
+              </div>
+            </article>
+          </div>
+          <!-- Article-->
+          <div class="pb-2 tns-item" id="tns3-item2" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Web development</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">Build Complete Websites in a Fraction of Time With This Handy Tool</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/04.jpg" alt="Charlie Welch">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Charlie Welch</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Jan 15</a></div>
+              </div>
+            </article>
+          </div>
+          <!-- Article-->
+          <div class="pb-2 tns-item" id="tns3-item3" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Project management</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">What You Can Learn About Managing Projects</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/07.jpg" alt="Sarah Palson">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Sarah Palson</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Dec 19</a></div>
+              </div>
+            </article>
+          </div>
+        <div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1"><span class="badge badge-lg badge-floating badge-floating-right badge-success">New</span>
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Identity design</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">Top 5 Secrets of Making Successful Corporate Identity Design</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/02.jpg" alt="Sanomi Smith">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Sanomi Smith</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Feb 12</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">CMS</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">List of Excellent Learning Management Systems</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/03.jpg" alt="Tim Brooks">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Tim Brooks</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Jan 27</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Web development</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">Build Complete Websites in a Fraction of Time With This Handy Tool</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/04.jpg" alt="Charlie Welch">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Charlie Welch</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Jan 15</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Project management</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">What You Can Learn About Managing Projects</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/07.jpg" alt="Sarah Palson">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Sarah Palson</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Dec 19</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1"><span class="badge badge-lg badge-floating badge-floating-right badge-success">New</span>
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">Identity design</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">Top 5 Secrets of Making Successful Corporate Identity Design</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/02.jpg" alt="Sanomi Smith">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Sanomi Smith</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Feb 12</a></div>
+              </div>
+            </article>
+          </div><div class="pb-2 tns-item tns-slide-cloned" aria-hidden="true" tabindex="-1">
+            <article class="card card-hover h-100 pt-4 pb-5 mx-1">
+              <div class="card-body pt-5 px-4 px-xl-5"><a class="meta-link font-size-sm mb-2" href="#">CMS</a>
+                <h3 class="h4 nav-heading mb-4"><a href="#">List of Excellent Learning Management Systems</a></h3>
+              </div>
+              <div class="px-4 px-xl-5 pt-2"><a class="media meta-link font-size-sm align-items-center" href="#"><img class="rounded-circle loaded tns-complete" width="42" src="https://around.createx.studio/img/testimonials/03.jpg" alt="Tim Brooks">
+                  <div class="media-body pl-2 ml-1 mt-n1">by<span class="font-weight-semibold ml-1">Tim Brooks</span></div></a>
+                <div class="mt-3 text-right text-nowrap"><a class="meta-link font-size-xs" href="#"><i class="fe-calendar mr-1 mt-n1"></i>&nbsp;Jan 27</a></div>
+              </div>
+            </article>
+          </div></div></div></div></div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer-->
+  <footer class="cs-footer jarallax bg-dark pt-5 pt-md-6 pt-lg-7" data-jarallax="" data-speed="0.3">
+    
+    <div class="container pt-3 pt-md-0">
+      <div class="row pb-2">
+        <form class="col-xl-6 col-lg-7 col-md-7 needs-validation mb-5" novalidate="">
+          <h2 class="text-light pb-4">What project are you looking for?</h2>
+          <h3 class="h6 pb-2 text-light">Services</h3>
+          <div class="btn-group-toggle pb-3 mb-3" data-toggle="buttons">
+            <label class="btn btn-outline-light mr-2 mb-2 active">
+              <input type="radio" name="services" id="branding" checked="">Branding
+            </label>
+            <label class="btn btn-outline-light mr-2 mb-2">
+              <input type="radio" name="services" id="ux">UI/UX
+            </label>
+            <label class="btn btn-outline-light mr-2 mb-2">
+              <input type="radio" name="services" id="web">Web
+            </label>
+            <label class="btn btn-outline-light mb-2">
+              <input type="radio" name="services" id="mobile">Mobile
+            </label>
+          </div>
+          <div class="input-group-overlay form-group">
+            <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="fe-user"></i></span></div>
+            <input class="form-control prepended-form-control" type="text" placeholder="Name" required="">
+          </div>
+          <div class="input-group-overlay form-group">
+            <div class="input-group-prepend-overlay"><span class="input-group-text"><i class="fe-mail"></i></span></div>
+            <input class="form-control prepended-form-control" type="email" placeholder="Email" required="">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="4" placeholder="Project description" required=""></textarea>
+          </div>
+          <div class="row pt-2">
+            <div class="col-lg-6 col-md-8">
+              <button class="btn btn-primary btn-block" type="submit">Send Request</button>
+            </div>
+          </div>
+        </form>
+        <div class="col-xl-3 col-lg-4 offset-xl-3 offset-lg-1 col-md-5 mb-5">
+          <h2 class="text-light pb-2">Contacts</h2>
+          <ul class="list-unstyled font-size-sm mb-4 pb-2">
+            <li><a class="nav-link-style nav-link-light" href="mailto:contact@example.com">contact@example.com</a></li>
+            <li><a class="nav-link-style nav-link-light" href="tel:+15262200459">+ 1 526 220 0459</a></li>
+          </ul>
+          <h3 class="h6 pb-2 text-light">Or connect with us on:</h3><a class="social-btn sb-facebook sb-light sb-lg mr-2 mb-2" href="#"><i class="fe-facebook"></i></a><a class="social-btn sb-twitter sb-light sb-lg mr-2 mb-2" href="#"><i class="fe-twitter"></i></a><a class="social-btn sb-instagram sb-light sb-lg mr-2 mb-2" href="#"><i class="fe-instagram"></i></a><a class="social-btn sb-dribbble sb-light sb-lg mr-2 mb-2" href="#"><i class="fe-dribbble"></i></a><a class="social-btn sb-behance sb-light sb-lg mr-2 mb-2" href="#"><i class="fe-behance"></i></a>
+        </div>
+      </div>
+      <p class="font-size-sm text-center pb-2 mb-4"><span class="text-light opacity-50 mr-1">© All rights reserved. Made by</span><a class="nav-link-style nav-link-light" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a></p>
+    </div>
+  <div id="jarallax-container-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; z-index: -100;"><div class="jarallax-img" style="background-image: url(&quot;img/demo/web-studio/cubes-bg.jpg&quot;); object-fit: cover; object-position: 50% 50%; max-width: none; position: absolute; top: 0px; left: 0px; width: 375.2px; height: 880.715px; overflow: hidden; pointer-events: none; transform-style: preserve-3d; backface-visibility: hidden; will-change: transform, opacity; margin-top: -34.3575px; transform: translate3d(0px, -526.654px, 0px);" data-jarallax-original-styles="background-image: url(img/demo/web-studio/cubes-bg.jpg);"></div></div></footer>
+  <!-- Back to top button--><a class="btn-scroll-top" href="#top" data-scroll=""><span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span><i class="btn-scroll-top-icon fe-arrow-up">   </i></a>
+  <!-- Vendor scrits: js libraries and plugins-->
+  <script src="vendor/jquery/dist/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+  <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+  <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="vendor/jarallax/dist/jarallax.min.js"></script><div style="position: fixed; top: -9999px; left: 0px; height: 100vh; width: 0px;"></div>
+  <script src="vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendor/shufflejs/dist/shuffle.min.js"></script>
+  <!-- Main theme script-->
+  <script src="js/theme.min.js"></script>
+
+</body></html>
